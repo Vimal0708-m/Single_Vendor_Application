@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@layer components {
+    /* Menu Item */
+    .menu-item {
+        @apply flex items-center gap-3 px-3.5 py-3 text-sm rounded-lg transition-all duration-200;
+    }
+    .menu-item-active {
+        @apply bg-brand-50 text-brand-600 dark:bg-brand-500/10 dark:text-brand-400;
+    }
+    .menu-item-inactive {
+        @apply text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/[0.03];
+    }
+    .menu-item-icon-active {
+        @apply text-brand-500 dark:text-brand-400;
+    }
+    .menu-item-icon-inactive {
+        @apply text-gray-400 dark:text-gray-500;
+    }
+
+    /* Menu Dropdown Item */
+    .menu-dropdown-item {
+        @apply flex items-center gap-2 px-3 py-2 text-sm rounded-lg transition-all duration-200;
+    }
+    .menu-dropdown-item-active {
+        @apply bg-brand-50 text-brand-600 dark:bg-brand-500/10 dark:text-brand-400;
+    }
+    .menu-dropdown-item-inactive {
+        @apply text-gray-600 hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03];
+    }
+
+    /* Menu Dropdown Badge */
+    .menu-dropdown-badge {
+        @apply text-[10px] font-semibold rounded px-1.5 py-0.5;
+    }
+    .menu-dropdown-badge-active {
+        @apply bg-brand-500 text-white;
+    }
+    .menu-dropdown-badge-inactive {
+        @apply bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-400;
+    }
+    .menu-dropdown-badge-pro {
+        @apply text-[10px] font-semibold rounded px-1.5 py-0.5;
+    }
+    .menu-dropdown-badge-pro-active {
+        @apply bg-purple-500 text-white;
+    }
+    .menu-dropdown-badge-pro-inactive {
+        @apply bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400;
+    }
+}

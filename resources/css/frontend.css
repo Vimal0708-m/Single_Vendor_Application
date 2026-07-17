@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bloom-background: #ffffff;
+        --bloom-foreground: #1c1c2e;
+        --bloom-card: #ffffff;
+        --bloom-card-foreground: #1c1c2e;
+        --bloom-primary: #e89b2d;
+        --bloom-primary-foreground: #000000;
+        --bloom-secondary: #f5f6f8;
+        --bloom-secondary-foreground: #6b7280;
+        --bloom-muted: #f8f9fc;
+        --bloom-muted-foreground: #8b8fa3;
+        --bloom-accent: #fdf6e3;
+        --bloom-accent-foreground: #b56c1c;
+        --bloom-destructive: #dc3545;
+        --bloom-destructive-foreground: #ffffff;
+        --bloom-border: #e8e9ed;
+        --bloom-input: #e8e9ed;
+        --bloom-ring: #e89b2d;
+        --bloom-radius: 1.225rem;
+    }
+}
